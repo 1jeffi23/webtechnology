@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles12.css">
+    <title>Responsive Side Navigation</title>
+</head>
+<body>
+
+    <div class="sidenav">
+        <a href="main0.html" onclick="changeColor(0)">JS Display Possibilities</a>
+        <a href="main1.html" onclick="changeColor(1)">JS Arithmatic Operations</a>
+        <a href="main2.html" onclick="changeColor(2)">JS Code Blocks & Variables</a>
+        <a href="main3.html" onclick="changeColor(3)">JS Functions</a>
+        <a href="main4.html" onclick="changeColor(4)">JS Objects</a>
+        <a href="main5.html" onclick="changeColor(5)">JS String Properties</a>
+        <a href="main6.html" onclick="changeColor(6)">JS Arrays</a>
+        <a href="main7.html" onclick="changeColor(7)">JS Get Date Methods</a>
+        <a href="main8.html" onclick="changeColor(8)">JS if else</a>
+        <a href="main9.html" onclick="changeColor(9)">JS Switch</a>
+        <a href="main10.html" onclick="changeColor(10)">JS Loops</a>
+        <a href="main11.html" onclick="changeColor(11)">Compiler</a>
+    </div>  
+    <div class="main-content">
+        <div id="content-0">
+            <!-- Example content for JS Arithmetic Operations -->
+            <h1>Arithmetic Operations</h1>
+            <p>JavaScript Arithmetic Operators are the operators that operate upon the numerical values
+                 and return a numerical value. Any kind of arithmetic operations performance required 
+                 these operators.
+                </p><br>
+                <h2>JavaScript Arithmetic Operator Table</h2>
+
+    <table>
+        <tr>
+            <th>Operator</th>
+            <th>Description</th>
+            <th>Example</th>
+            <th>Result</th>
+        </tr>
+        <tr>
+            <td>+</td>
+            <td>Addition</td>
+            <td>5 + 3</td>
+            <td id="additionResult"></td>
+        </tr>
+        <tr>
+            <td>-</td>
+            <td>Subtraction</td>
+            <td>8 - 3</td>
+            <td id="subtractionResult"></td>
+        </tr>
+        <tr>
+            <td>*</td>
+            <td>Multiplication</td>
+            <td>4 * 6</td>
+            <td id="multiplicationResult"></td>
+        </tr>
+        <tr>
+            <td>/</td>
+            <td>Division</td>
+            <td>10 / 2</td>
+            <td id="divisionResult"></td>
+        </tr>
+        <tr>
+            <td>%</td>
+            <td>Modulus (Remainder)</td>
+            <td>15 % 7</td>
+            <td id="modulusResult"></td>
+        </tr>
+    </table>
+    <script>
+        // Perform arithmetic operations and display results
+        document.getElementById("additionResult").innerText = 5 + 3;
+        document.getElementById("subtractionResult").innerText = 8 - 3;
+        document.getElementById("multiplicationResult").innerText = 4 * 6;
+        document.getElementById("divisionResult").innerText = 10 / 2;
+        document.getElementById("modulusResult").innerText = 15 % 7;
+    </script>
+
+
+            <h3>Example</h3>
+            <pre>
+                <code>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;body&gt;
+
+                    &lt;h2&gt;JavaScript Statements&lt;/h2&gt;
+
+                    &lt;p&gt;JavaScript statements are separated by semicolons.&lt;/p&gt;
+
+                    &lt;p id="demo1"&gt;&lt;/p&gt;
+
+                   &lt;script&gt;
+                   let a, b, c;
+                   a = 5;
+                   b = 6;
+                   c = a + b;
+                  document.getElementById("demo1").innerHTML = c;
+                  &lt;/script&gt;
+
+                  &lt;/body&gt;
+                  &lt;/html&gt;
+                </code>
+            </pre>
+             
+
+    <script src="script1.js"></script>
+
+
+</body>
+</html>

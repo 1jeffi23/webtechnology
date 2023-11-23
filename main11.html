@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Code Editor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/codemirror.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/codemirror.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/mode/htmlmixed/htmlmixed.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/mode/css/css.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/mode/javascript/javascript.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            align-items: stretch;
+            height: 100vh;
+        }
+
+        #editor-container {
+            flex: 1.5; /* Adjusted flex value */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        #editor-label {
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: #333;
+        }
+        #editor {
+            width: 100%;
+            height: 600px; /* Increased height */
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #fff; /* Set background color to white */
+        }
+
+        .CodeMirror {
+            width: 100%;
+            height: 600px; /* Increased height */
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #fff; /* Set background color to white */
+        }
+
+        .CodeMirror-gutters {
+            background-color: #f5f5f5; /* Adjusted gutter background color */
+        }
+
+        .CodeMirror-linenumber {
+            color: #333; /* Adjusted line number color */
+        }
+        
+
+        #output-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        #output {
+            width: 100%;
+            height: 74%;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: auto;
+        }
+
+        #run-button {
+            padding: 10px 20px;
+            margin-top: 20px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 19px;
+            transition: background-color 0.3s;
+        }
+
+        #run-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div id="editor-container">
+        <div id="editor-label"><h2>Enter Code:</h2></div>
+        <div id="editor"></div>
+    </div>
+    <div id="output-container">
+        <button id="run-button" onclick="runCode()">Run Code</button>
+        <div id="output"></div>
+    </div>
+
+    <script>
+        var editor = CodeMirror(document.getElementById("editor"), {
+            mode: "htmlmixed",
+            lineNumbers: true,
+            theme: "darcula"
+        });
+
+        function runCode() {
+            var code = editor.getValue();
+            var outputDiv = document.getElementById("output");
+
+            try {
+                outputDiv.innerHTML = "";
+                var iframe = document.createElement("iframe");
+                iframe.style.width = "100%";
+                iframe.style.height = "100%";
+                outputDiv.appendChild(iframe);
+
+                var iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+                iframeDoc.open();
+                iframeDoc.write(code);
+                iframeDoc.close();
+            } catch (e) {
+                outputDiv.innerText = "Error: " + e.message;
+            }
+        }
+    </script>
+</body>
+</html>

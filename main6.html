@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles12.css">
+    <title>Responsive Side Navigation</title>
+</head>
+<body>
+
+    <div class="sidenav">
+        <a href="main0.html" onclick="changeColor(0)">JS Display Possibilities</a>
+        <a href="main1.html" onclick="changeColor(1)">JS Arithmatic Operations</a>
+        <a href="main2.html" onclick="changeColor(2)">JS Code Blocks & Variables</a>
+        <a href="main3.html" onclick="changeColor(3)">JS Functions</a>
+        <a href="main4.html" onclick="changeColor(4)">JS Objects</a>
+        <a href="main5.html" onclick="changeColor(5)">JS String Properties</a>
+        <a href="main6.html" onclick="changeColor(6)">JS Arrays</a>
+        <a href="main7.html" onclick="changeColor(7)">JS Get Date Methods</a>
+        <a href="main8.html" onclick="changeColor(8)">JS if else</a>
+        <a href="main9.html" onclick="changeColor(9)">JS Switch</a>
+        <a href="main10.html" onclick="changeColor(10)">JS Loops</a>
+        <a href="main11.html" onclick="changeColor(11)">Compiler</a>
+    </div>  
+    <div class="main-content">
+        <div id="content-0">
+            <!-- Example content for JS String Property -->
+            <h1>JavaScript Arrays</h1>
+
+            <p>In JavaScript, an array is a special variable that can hold multiple values. Each value is called an element, and you can access them using an index.</p>
+            
+            <h2>Example 1: Creating an Array</h2>
+            <pre>
+            <code>
+                // Creating an array
+                var fruits = ["Apple", "Banana", "Orange", "Mango"];
+            </code>
+        </pre>
+            
+            <h2>Example 2: Accessing Array Elements</h2>
+            <pre>
+            <code>
+                // Accessing array elements
+                console.log(fruits[0]); // Output: Apple
+                console.log(fruits[2]); // Output: Orange
+            </code>
+        </pre>
+            
+            <h2>Example 3: Modifying Array Elements</h2>
+            <pre>
+            <code>
+                // Modifying array elements
+                fruits[1] = "Grapes";
+                console.log(fruits); // Output: ["Apple", "Grapes", "Orange", "Mango"]
+            </code>
+        </pre>
+            
+            <h2>Example 4: Array Methods</h2>
+            <pre>
+            <code>
+                // Array methods
+                fruits.push("Pineapple");
+                fruits.pop();
+                fruits.unshift("Watermelon");
+                fruits.shift();
+            </code>
+        </pre>
+            
+            <p>This is a basic introduction to JavaScript arrays. Arrays in JavaScript are versatile and can be used to store and manipulate collections of data.</p>
+                     
+            <h3>Example 1</h3>
+<pre>
+    <code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;body&gt;
+      
+        &lt;h2&gt;JavaScript Arrays&lt;/h2&gt;
+        &lt;p&gt;The length property returns the length of an array.&lt;/p&gt;
+      
+        &lt;p id="demo"&gt;&lt;/p&gt;
+      
+        &lt;script&gt;
+          const fruits = ["Banana", "Orange", "Apple", "Mango"];
+          // document.getElementById("demo").innerHTML = fruits.length;
+          // document.getElementById("demo").innerHTML = fruits[0];
+          // accessing the last element of the array
+          document.getElementById("demo").innerHTML = fruits[fruits.length - 1];
+        &lt;/script&gt;
+      
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </code>
+</pre>
+
+<h3>Example 2</h3>
+<pre>
+    <code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;body&gt;
+      
+        &lt;h2&gt;JavaScript Arrays&lt;/h2&gt;
+      
+        &lt;p id="demo"&gt;&lt;/p&gt;
+      
+        &lt;script&gt;
+          const cars = [];
+          cars[0] = "Saab";
+          cars[1] = "Volvo";
+          cars[2] = "BMW";
+          document.getElementById("demo").innerHTML = cars;
+        &lt;/script&gt;
+      
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </code>
+</pre>
+
+
+            
+
+    <script src="script1.js"></script>
+  
+
+</body>
+</html>

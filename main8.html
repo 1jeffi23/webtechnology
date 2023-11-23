@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles12.css">
+    <title>Responsive Side Navigation</title>
+</head>
+<body>
+
+    <div class="sidenav">
+        <a href="main0.html" onclick="changeColor(0)">JS Display Possibilities</a>
+        <a href="main1.html" onclick="changeColor(1)">JS Arithmatic Operations</a>
+        <a href="main2.html" onclick="changeColor(2)">JS Code Blocks & Variables</a>
+        <a href="main3.html" onclick="changeColor(3)">JS Functions</a>
+        <a href="main4.html" onclick="changeColor(4)">JS Objects</a>
+        <a href="main5.html" onclick="changeColor(5)">JS String Properties</a>
+        <a href="main6.html" onclick="changeColor(6)">JS Arrays</a>
+        <a href="main7.html" onclick="changeColor(7)">JS Get Date Methods</a>
+        <a href="main8.html" onclick="changeColor(8)">JS if else</a>
+        <a href="main9.html" onclick="changeColor(9)">JS Switch</a>
+        <a href="main10.html" onclick="changeColor(10)">JS Loops</a>
+        <a href="main11.html" onclick="changeColor(11)">Compiler</a>
+    </div>  
+    <div class="main-content">
+        <div id="content-0">
+            <!-- Example content for JS GetDate Property -->
+
+            <h1>JavaScript If and If-Else Statements</h1>
+
+            <p>In JavaScript, the `if` statement is used to make decisions based on conditions. If a certain condition is true, the block of code inside the `if` statement will be executed. Optionally, an `else` block can be added to execute code when the condition is false.</p>
+            
+            <h2>Example 1: Simple If Statement</h2>
+            <pre>
+            <code>
+                // Simple if statement
+                var num = 10;
+                if (num > 0) {
+                    console.log("The number is positive.");
+                }
+            </code>
+        </pre>
+            
+            <h2>Example 2: If-Else Statement</h2>
+            <pre>
+            <code>
+                // If-else statement
+                var hour = new Date().getHours();
+                if (hour < 12) {
+                    console.log("Good morning!");
+                } else {
+                    console.log("Good afternoon!");
+                }
+            </code>
+        </pre>
+            
+            <h2>Example 3: If-Else If-Else Statement</h2>
+            <pre>
+            <code>
+                // If-else if-else statement
+                var time = new Date().getHours();
+                if (time < 12) {
+                    console.log("Good morning!");
+                } else if (time < 18) {
+                    console.log("Good afternoon!");
+                } else {
+                    console.log("Good evening!");
+                }
+            </code>
+        </pre>
+            
+            <p>These are basic examples of using `if` and `if-else` statements in JavaScript. You can customize and expand upon these examples based on your specific needs.</p>
+            
+           
+<h2>Example 4:</h2>
+<pre>
+    <code>
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;body&gt;
+
+  &lt;h2&gt;JavaScript if .. else&lt;/h2&gt;
+
+  &lt;p&gt;A time-based greeting:&lt;/p&gt;
+
+  &lt;p id="demo"&gt;&lt;/p&gt;
+
+  &lt;script&gt;
+    const time = new Date().getHours();
+    let greeting;
+    if (time < 10) {
+      greeting = "Good morning";
+    } else if (time < 20) {
+      greeting = "Good day";
+    } else {
+      greeting = "Good evening";
+    }
+    document.getElementById("demo").innerHTML = greeting;
+  &lt;/script&gt;
+
+  &lt;/body&gt;
+  &lt;/html&gt;
+    </code>
+</pre>
+
+            
+
+    <script src="script1.js"></script>
+  
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles12.css">
+    <title>Responsive Side Navigation</title>
+</head>
+<body>
+
+    <div class="sidenav">
+        <a href="main0.html" onclick="changeColor(0)">JS Display Possibilities</a>
+        <a href="main1.html" onclick="changeColor(1)">JS Arithmatic Operations</a>
+        <a href="main2.html" onclick="changeColor(2)">JS Code Blocks & Variables</a>
+        <a href="main3.html" onclick="changeColor(3)">JS Functions</a>
+        <a href="main4.html" onclick="changeColor(4)">JS Objects</a>
+        <a href="main5.html" onclick="changeColor(5)">JS String Properties</a>
+        <a href="main6.html" onclick="changeColor(6)">JS Arrays</a>
+        <a href="main7.html" onclick="changeColor(7)">JS Get Date Methods</a>
+        <a href="main8.html" onclick="changeColor(8)">JS if else</a>
+        <a href="main9.html" onclick="changeColor(9)">JS Switch</a>
+        <a href="main10.html" onclick="changeColor(10)">JS Loops</a>
+        <a href="main11.html" onclick="changeColor(11)">Compiler</a>
+    </div>  
+    <div class="main-content">
+        <div id="content-0">
+            <!-- Example content for JS objects -->
+            <h1>JavaScript Objects</h1>
+
+<p>In JavaScript, an object is a collection of key-value pairs. It is a versatile data type that can store various types of data.</p>
+
+<h2>Example 1: Creating an Object</h2>
+<pre>
+<code>
+    // Creating an object
+    var person = {
+        firstName: "John",
+        lastName: "Doe",
+        age: 30,
+        isStudent: false
+    };
+</code>
+</pre>
+
+<h2>Example 2: Accessing Object Properties</h2>
+<pre>
+<code>
+    // Accessing object properties
+    console.log(person.firstName); // Output: John
+    console.log(person["lastName"]); // Output: Doe
+</code>
+</pre>
+
+<h2>Example 3: Modifying Object Properties</h2>
+<pre>
+<code>
+    // Modifying object properties
+    person.age = 31;
+    person["isStudent"] = true;
+</code>
+</pre>
+
+<h2>Example 4: Adding New Properties</h2>
+<pre>
+<code>
+    // Adding new properties to an object
+    person.city = "New York";
+    person["email"] = "john@example.com";
+</code>
+</pre>
+
+<h2>Example 5: Object Methods</h2>
+<pre>
+<code>
+    // Object methods
+    person.fullName = function() {
+        return this.firstName + " " + this.lastName;
+    };
+
+    console.log(person.fullName()); // Output: John Doe
+</code>
+</pre>
+
+<p>This is a basic introduction to JavaScript objects. Objects in JavaScript are powerful and can be used to represent complex data structures and functionalities.</p>
+          
+<h3>Example</h3>
+<pre>
+    <code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;body&gt;
+      
+        &lt;h2&gt;JavaScript Objects&lt;/h2&gt;
+        &lt;p&gt;An object method is a function definition, stored as a property value.&lt;/p&gt;
+      
+        &lt;p id="demo"&gt;&lt;/p&gt;
+      
+        &lt;script&gt;
+          // Create an object:
+          const person = {
+            firstName: "John",
+            lastName: "Doe",
+            id: 5566,
+            fullName: function() {
+              return this.firstName + " " + this.lastName;
+            }
+          };
+      
+          // Display data from the object:
+          document.getElementById("demo").innerHTML = person.fullName();
+        &lt;/script&gt;
+      
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </code>
+</pre>
+
+            
+
+    <script src="script1.js"></script>
+  
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles12.css">
+    <title>Responsive Side Navigation</title>
+</head>
+<body>
+
+    <div class="sidenav">
+        <a href="main0.html" onclick="changeColor(0)">JS Display Possibilities</a>
+        <a href="main1.html" onclick="changeColor(1)">JS Arithmatic Operations</a>
+        <a href="main2.html" onclick="changeColor(2)">JS Code Blocks & Variables</a>
+        <a href="main3.html" onclick="changeColor(3)">JS Functions</a>
+        <a href="main4.html" onclick="changeColor(4)">JS Objects</a>
+        <a href="main5.html" onclick="changeColor(5)">JS String Properties</a>
+        <a href="main6.html" onclick="changeColor(6)">JS Arrays</a>
+        <a href="main7.html" onclick="changeColor(7)">JS Get Date Methods</a>
+        <a href="main8.html" onclick="changeColor(8)">JS if else</a>
+        <a href="main9.html" onclick="changeColor(9)">JS Switch</a>
+        <a href="main10.html" onclick="changeColor(10)">JS Loops</a>
+        <a href="main11.html" onclick="changeColor(11)">Compiler</a>
+    </div>  
+    <div class="main-content">
+        <div id="content-0">
+            <!-- Example content for JS GetDate Property -->
+
+
+
+            <h1>JavaScript Date Methods</h1>
+
+<p>In JavaScript, the Date object is used to work with dates and times. It provides various methods to get and manipulate dates.</p>
+
+<h2>Date Methods</h2>
+<table>
+    <tr>
+        <th>Method</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>new Date()</td>
+        <td>Creates a new Date object representing the current date and time.</td>
+    </tr>
+    <tr>
+        <td>getFullYear()</td>
+        <td>Returns the year of the specified date according to local time.</td>
+    </tr>
+    <tr>
+        <td>getMonth()</td>
+        <td>Returns the month (0-11) for the specified date according to local time.</td>
+    </tr>
+    <tr>
+        <td>getDate()</td>
+        <td>Returns the day of the month (1-31) for the specified date according to local time.</td>
+    </tr>
+    <tr>
+        <td>getDay()</td>
+        <td>Returns the day of the week (0-6) for the specified date according to local time.</td>
+    </tr>
+    <tr>
+        <td>getHours()</td>
+        <td>Returns the hour (0-23) for the specified date according to local time.</td>
+    </tr>
+    <tr>
+        <td>getMinutes()</td>
+        <td>Returns the minutes (0-59) for the specified date according to local time.</td>
+    </tr>
+    <tr>
+        <td>getSeconds()</td>
+        <td>Returns the seconds (0-59) for the specified date according to local time.</td>
+    </tr>
+    <tr>
+        <td>getMilliseconds()</td>
+        <td>Returns the milliseconds (0-999) for the specified date according to local time.</td>
+    </tr>
+    <tr>
+        <td>Date.now()</td>
+        <td>Returns the current timestamp in milliseconds since the Unix epoch.</td>
+    </tr>
+</table>
+
+            
+
+<h2>Example 1: Getting the Current Date and Time</h2>
+<pre>
+<code>
+    // Getting the current date and time
+    var currentDate = new Date();
+    console.log(currentDate);
+</code>
+</pre>
+
+<h2>Example 2: Getting Specific Date Components</h2>
+<pre>
+<code>
+    // Getting specific date components
+    var date = new Date();
+    var year = date.getFullYear();
+    var month = date.getMonth() + 1; // Months are zero-based
+    var day = date.getDate();
+    console.log(`Current Date: ${year}-${month}-${day}`);
+</code>
+</pre>
+
+<h2>Example 3: Formatting Date and Time</h2>
+<pre>
+<code>
+    // Formatting date and time
+    var date = new Date();
+    var formattedDate = date.toLocaleString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric',
+     hour: '2-digit', minute: '2-digit', second: '2-digit', timeZoneName: 'short' });
+    console.log(formattedDate);
+</code>
+</pre>
+
+<p>These are just a few examples of the JavaScript Date methods. Explore more methods and options based on your requirements!</p>
+           
+<h2>Example 4:</h2>
+<pre>
+    <code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;body&gt;
+
+        &lt;h2&gt;JavaScript getFullYear()&lt;/h2&gt;
+        &lt;p&gt;The getFullYear() method returns the full year of a date:&lt;/p&gt;
+
+        &lt;p id="demo"&gt;&lt;/p&gt;
+
+        &lt;script&gt;
+         const d = new Date();
+         // document.getElementById("demo").innerHTML = d.getFullYear();
+         // document.getElementById("demo").innerHTML = d.getDay();
+        / / document.getElementById("demo").innerHTML = Date.now();
+         // document.getElementById("demo").innerHTML = d.getDate();
+            document.getElementById("demo").innerHTML = d;
+        &lt;/script&gt;
+
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </code>
+</pre>
+
+            
+
+    <script src="script1.js"></script>
+  
+
+</body>
+</html>

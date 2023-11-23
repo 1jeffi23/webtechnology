@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles12.css">
+    <title>Responsive Side Navigation</title>
+</head>
+<body>
+
+    <div class="sidenav">
+      <a href="main0.html" onclick="changeColor(0)">JS Display Possibilities</a>
+        <a href="main1.html" onclick="changeColor(1)">JS Arithmatic Operations</a>
+        <a href="main2.html" onclick="changeColor(2)">JS Code Blocks & Variables</a>
+        <a href="main3.html" onclick="changeColor(3)">JS Functions</a>
+        <a href="main4.html" onclick="changeColor(4)">JS Objects</a>
+        <a href="main5.html" onclick="changeColor(5)">JS String Properties</a>
+        <a href="main6.html" onclick="changeColor(6)">JS Arrays</a>
+        <a href="main7.html" onclick="changeColor(7)">JS Get Date Methods</a>
+        <a href="main8.html" onclick="changeColor(8)">JS if else</a>
+        <a href="main9.html" onclick="changeColor(9)">JS Switch</a>
+        <a href="main10.html" onclick="changeColor(10)">JS Loops</a>
+        <a href="main11.html" onclick="changeColor(11)">Compiler</a>
+    </div>  
+    <div class="main-content">
+        <div id="content-0">
+            <!-- Example content for JS functions -->
+            <h2>JavaScript Functions</h2>
+            <p>A JavaScript function is a block of code designed to perform a particular task.<br><br>
+
+                A JavaScript function is executed when "something" invokes it (calls it).</p>
+
+            <h3>Example</h3>
+            <pre>
+                <code>
+                    // Function to compute the product of p1 and p2
+                    function myFunction(p1, p2) {
+                      return p1 * p2;
+                    }
+                  </code>
+            </pre>
+            
+            <!--Example2-->
+
+            <h2>JavaScript Function Syntax</h2>
+            <pre>
+ A JavaScript function is defined with the function keyword, followed by a name, followed by parentheses ().
+
+ Function names can contain letters, digits, underscores, and dollar signs (same rules as variables).
+                
+ The parentheses may include parameter names separated by commas:
+ (parameter1, parameter2, ...)
+                
+ The code to be executed, by the function, is placed inside curly brackets: {}
+                </pre>
+
+            <h3>Example 1</h3>
+            <pre>
+                <code>
+                    function name(parameter1, parameter2, parameter3) {
+                        // code to be executed
+                      }
+                </code>
+
+Function parameters are listed inside the parentheses () in the function definition.
+
+Function arguments are the values received by the function when it is invoked.
+
+Inside the function, the arguments (the parameters) behave as local variables.
+            </pre>
+            
+            
+
+
+            <!--Example3-->
+
+            <h3>Function Return</h3>
+            <pre>
+When JavaScript reaches a return statement, the function will stop executing.
+
+If the function was invoked from a statement, JavaScript will "return" to execute the code after the invoking statement.
+                
+Functions often compute a return value. The return value is "returned" back to the "caller":
+            </pre>
+            <pre>
+                <code>
+                    // Function is called, the return value will end up in x
+                    let x = myFunction(4, 3);
+
+                    function myFunction(a, b) {
+                    // Function returns the product of a and b
+                    return a * b;
+                    }
+                </code>
+            </pre>
+
+            <!--Example-->
+
+            <h3>Example</h3>
+            <pre>
+                <code>
+                    &lt;form&gt;&lt;br&gt;
+                      Enter your First Name: &lt;input type="text" id="firstname"/&gt;&lt;br&gt;&lt;br&gt;
+                      Enter your Last Name: &lt;input type="text" id="lastname"/&gt;&lt;br&gt;&lt;br&gt;
+                      &lt;input type="submit" value="Submit" onclick="formdata()"/&gt;&lt;br&gt;
+                    &lt;/form&gt;
+                    &lt;script&gt;
+                      function formdata() 
+                      {
+                        var firstname1= document.getElementById("firstname").value;
+                        var lastname1= document.getElementById("lastname").value;
+                        document.writeln("&lt;h1&gt;Confirmation Page&lt;/h1&gt;&lt;br&gt;");
+                        document.writeln("Thank you for completing this form.&lt;br&gt;&lt;br&gt;");
+                        document.writeln("The first name you entered is " + firstname1 + "&lt;br&gt;");
+                        document.writeln("The last name you entered is " + lastname1);
+                      }
+                    &lt;/script&gt;
+                  </code>
+                  
+            </pre>
+
+
+            
+
+    <script src="script1.js"></script>
+  
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles12.css">
+    <title>Responsive Side Navigation</title>
+</head>
+<body>
+
+    <div class="sidenav">
+        <a href="main0.html" onclick="changeColor(0)">JS Display Possibilities</a>
+        <a href="main1.html" onclick="changeColor(1)">JS Arithmatic Operations</a>
+        <a href="main2.html" onclick="changeColor(2)">JS Code Blocks & Variables</a>
+        <a href="main3.html" onclick="changeColor(3)">JS Functions</a>
+        <a href="main4.html" onclick="changeColor(4)">JS Objects</a>
+        <a href="main5.html" onclick="changeColor(5)">JS String Properties</a>
+        <a href="main6.html" onclick="changeColor(6)">JS Arrays</a>
+        <a href="main7.html" onclick="changeColor(7)">JS Get Date Methods</a>
+        <a href="main8.html" onclick="changeColor(8)">JS if else</a>
+        <a href="main9.html" onclick="changeColor(9)">JS Switch</a>
+        <a href="main10.html" onclick="changeColor(10)">JS Loops</a>
+        <a href="main11.html" onclick="changeColor(11)">Compiler</a>
+    </div>  
+    <div class="main-content">
+        <div id="content-0">
+            
+            <h1>JavaScript Loops</h1>
+
+            <p>In JavaScript, loops are used to execute a block of code repeatedly. There are different types of loops: `for`, `while`, and `do-while`.</p>
+            <pre>
+JavaScript supports different kinds of loops:
+
+  <b>><b>for - loops through a block of code a number of times
+  <b>></b>for/in - loops through the properties of an object
+  <b>></b>for/of - loops through the values of an iterable object
+  <b>></b>while - loops through a block of code while a specified condition is true
+  <b>></b>do/while - also loops through a block of code while a specified condition is true
+            </pre>
+            <h2>Example 1: For Loop</h2>
+            <pre>
+            <code>
+                // Example of a for loop
+                for (let i = 1; i <= 5; i++) {
+                    console.log("Iteration " + i);
+                }
+            </code>
+        </pre>
+            
+            <h2>Example 2: While Loop</h2>
+            <pre>
+            <code>
+                // Example of a while loop
+                let count = 0;
+                while (count < 3) {
+                    console.log("Count: " + count);
+                    count++;
+                }
+            </code>
+        </pre>
+            
+            <h2>Example 3: Do-While Loop</h2>
+            <pre>
+            <code>
+                // Example of a do-while loop
+                let num = 1;
+                do {
+                    console.log("Number: " + num);
+                    num++;
+                } while (num <= 3);
+            </code>
+        </pre>
+
+            
+
+    <script src="script1.js"></script>
+  
+
+</body>
+</html>

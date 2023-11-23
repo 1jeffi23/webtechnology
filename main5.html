@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles12.css">
+    <title>Responsive Side Navigation</title>
+</head>
+<body>
+
+    <div class="sidenav">
+        <a href="main0.html" onclick="changeColor(0)">JS Display Possibilities</a>
+        <a href="main1.html" onclick="changeColor(1)">JS Arithmatic Operations</a>
+        <a href="main2.html" onclick="changeColor(2)">JS Code Blocks & Variables</a>
+        <a href="main3.html" onclick="changeColor(3)">JS Functions</a>
+        <a href="main4.html" onclick="changeColor(4)">JS Objects</a>
+        <a href="main5.html" onclick="changeColor(5)">JS String Properties</a>
+        <a href="main6.html" onclick="changeColor(6)">JS Arrays</a>
+        <a href="main7.html" onclick="changeColor(7)">JS Get Date Methods</a>
+        <a href="main8.html" onclick="changeColor(8)">JS if else</a>
+        <a href="main9.html" onclick="changeColor(9)">JS Switch</a>
+        <a href="main10.html" onclick="changeColor(10)">JS Loops</a>
+        <a href="main11.html" onclick="changeColor(11)">Compiler</a>
+    </div>  
+    <div class="main-content">
+        <div id="content-0">
+            <!-- Example content for JS String Property -->
+            <h1>JavaScript String Properties</h1>
+
+<p>In JavaScript, strings are a sequence of characters, and they have various properties and methods that you can use to manipulate and retrieve information about strings.</p>
+
+<h2>String Length Property</h2>
+<pre>
+<code>
+    // String Length Property
+    var greeting = "Hello, World!";
+    console.log(greeting.length); // Output: 13
+</code>
+</pre>
+
+<h2>String Concatenation</h2>
+<pre>
+<code>
+    // String Concatenation
+    var firstName = "John";
+    var lastName = "Doe";
+    var fullName = firstName + " " + lastName;
+    console.log(fullName); // Output: John Doe
+</code>
+</pre>
+
+<h2>String Indexing</h2>
+<pre>
+<code>
+    // String Indexing
+    var message = "JavaScript";
+    console.log(message[0]); // Output: J
+    console.log(message.charAt(4)); // Output: S
+</code>
+</pre>
+
+<h2>String Conversion</h2>
+<pre>
+<code>
+    // String Conversion
+    var number = 42;
+    var strNumber = String(number);
+    console.log(strNumber); // Output: "42"
+</code>
+</pre>
+
+<p>These are just a few examples of the properties and operations you can perform on JavaScript strings. Explore more string methods and properties based on your needs!</p>
+
+   <br>   
+<h2>JavaScript String Methods</h2>
+
+<p>In JavaScript, strings have various methods that you can use to manipulate and retrieve information about strings.</p>
+
+<table>
+    <tr>
+        <th>Method</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>slice(start, end)</td>
+        <td>Extracts a part of a string and returns a new string.</td>
+    </tr>
+    <tr>
+        <td>substring(start, end)</td>
+        <td>Extracts a part of a string between two specified indices.</td>
+    </tr>
+    <tr>
+        <td>substr(start, length)</td>
+        <td>Extracts a specified number of characters from a string, starting at a specified position.</td>
+    </tr>
+    <tr>
+        <td>replace()</td>
+        <td>Replaces a specified value with another value in a string.</td>
+    </tr>
+    <tr>
+        <td>toUpperCase()</td>
+        <td>Converts a string to uppercase letters.</td>
+    </tr>
+    <tr>
+        <td>toLowerCase()</td>
+        <td>Converts a string to lowercase letters.</td>
+    </tr>
+    <tr>
+        <td>concat()</td>
+        <td>Concatenates two or more strings.</td>
+    </tr>
+    <tr>
+        <td>trim()</td>
+        <td>Removes whitespace from both ends of a string.</td>
+    </tr>
+    <tr>
+        <td>trimStart()</td>
+        <td>Removes whitespace from the beginning of a string.</td>
+    </tr>
+    <tr>
+        <td>trimEnd()</td>
+        <td>Removes whitespace from the end of a string.</td>
+    </tr>
+</table>
+
+<p>Explore these string methods based on your needs!</p>  <br>     
+          
+<h3>Example</h3>
+<pre>
+    <code>
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;body&gt;
+
+  &lt;h2&gt;JavaScript String Properties&lt;/h2&gt;
+
+  &lt;p&gt;The length property returns the length of a string:&lt;/p&gt;
+
+  &lt;p id="demo"&gt;&lt;/p&gt;
+
+  &lt;script&gt;
+    let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    document.getElementById("demo").innerHTML = text.length;
+  &lt;/script&gt;
+
+  &lt;/body&gt;
+  &lt;/html&gt;
+    </code>
+</pre>
+
+            
+
+    <script src="script1.js"></script>
+  
+
+</body>
+</html>
